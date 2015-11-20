@@ -14,6 +14,7 @@
 		057092151BFEC2B300027E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057092131BFEC2B300027E14 /* LaunchScreen.storyboard */; };
 		057092201BFEC2B300027E14 /* SwiftUiUxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0570921F1BFEC2B300027E14 /* SwiftUiUxTests.swift */; };
 		0570922B1BFEC2B300027E14 /* SwiftUiUxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0570922A1BFEC2B300027E14 /* SwiftUiUxUITests.swift */; };
+		057092391BFEE93D00027E14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057092381BFEE93D00027E14 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		057092261BFEC2B300027E14 /* SwiftUiUxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUiUxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0570922A1BFEC2B300027E14 /* SwiftUiUxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiUxUITests.swift; sourceTree = "<group>"; };
 		0570922C1BFEC2B300027E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		057092381BFEE93D00027E14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				057092391BFEE93D00027E14 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		057091FE1BFEC2B300027E14 = {
 			isa = PBXGroup;
 			children = (
+				057092381BFEE93D00027E14 /* CoreGraphics.framework */,
 				057092091BFEC2B300027E14 /* SwiftUiUx */,
 				0570921E1BFEC2B300027E14 /* SwiftUiUxTests */,
 				057092291BFEC2B300027E14 /* SwiftUiUxUITests */,

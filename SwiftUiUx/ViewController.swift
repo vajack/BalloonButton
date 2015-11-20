@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 
 class ViewController: UIViewController {
     
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         mainBtn.backgroundColor = UIColor.cyanColor()
         mainBtn.layer.cornerRadius = 30
         mainBtn.clipsToBounds = true
+        mainBtn.userInteractionEnabled = true
         mainBtn.tag = 1
         
     }
@@ -49,7 +51,10 @@ class ViewController: UIViewController {
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        pushPlace.alpha = 0
+        let touch = touches.first! as UITouch
+        if touch.view?.tag == self.mainBtn.tag{
+            
+        }
     }
     
 }
