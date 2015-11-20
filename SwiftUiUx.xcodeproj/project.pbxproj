@@ -15,6 +15,7 @@
 		057092201BFEC2B300027E14 /* SwiftUiUxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0570921F1BFEC2B300027E14 /* SwiftUiUxTests.swift */; };
 		0570922B1BFEC2B300027E14 /* SwiftUiUxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0570922A1BFEC2B300027E14 /* SwiftUiUxUITests.swift */; };
 		057092391BFEE93D00027E14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 057092381BFEE93D00027E14 /* CoreGraphics.framework */; };
+		0570923B1BFF174100027E14 /* balloonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0570923A1BFF174100027E14 /* balloonButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0570922A1BFEC2B300027E14 /* SwiftUiUxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiUxUITests.swift; sourceTree = "<group>"; };
 		0570922C1BFEC2B300027E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		057092381BFEE93D00027E14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0570923A1BFF174100027E14 /* balloonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = balloonButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				0570920A1BFEC2B300027E14 /* AppDelegate.swift */,
 				0570920C1BFEC2B300027E14 /* ViewController.swift */,
+				0570923A1BFF174100027E14 /* balloonButton.swift */,
 				0570920E1BFEC2B300027E14 /* Main.storyboard */,
 				057092111BFEC2B300027E14 /* Assets.xcassets */,
 				057092131BFEC2B300027E14 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				0570920D1BFEC2B300027E14 /* ViewController.swift in Sources */,
 				0570920B1BFEC2B300027E14 /* AppDelegate.swift in Sources */,
+				0570923B1BFF174100027E14 /* balloonButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
