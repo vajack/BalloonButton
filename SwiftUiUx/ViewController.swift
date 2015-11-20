@@ -14,20 +14,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainBtn: UILabel!
     @IBOutlet weak var pushPlace: UILabel!
     
+    let layer:CAShapeLayer = CAShapeLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pushPlace.alpha = 0
-        pushPlace.backgroundColor = UIColor.cyanColor()
+        pushPlace.backgroundColor = UIColor.redColor()
         pushPlace.layer.cornerRadius = 42
         pushPlace.clipsToBounds = true
         
         mainBtn.center = CGPoint(x: UIScreen.mainScreen().bounds.width / 2, y: UIScreen.mainScreen().bounds.height / 2)
-        mainBtn.backgroundColor = UIColor.cyanColor()
+        mainBtn.backgroundColor = UIColor.redColor()
         mainBtn.layer.cornerRadius = 30
-        mainBtn.clipsToBounds = true
+        mainBtn.clipsToBounds = false
         mainBtn.userInteractionEnabled = true
         mainBtn.tag = 1
         
+        layer.strokeColor = UIColor.cyanColor().CGColor
+        layer.fillColor = UIColor.cyanColor().CGColor
+        mainBtn.layer.addSublayer(layer)
+        
+        let stroke:CGPath = {
+            let path:CGMutablePathRef = CGPathCreateMutable()
+            CGPathMoveToPoint(path, nil, 0, 32)
+            CGPathAddCurveToPoint(path, nil, 2.00, 40.84, 13.16, 52.00, 32, 64)
+            CGPathAddCurveToPoint(path, nil, 20.00, 46.00, 25, 48, 100, 0)
+            return path
+        }()
+        layer.path = stroke
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,9 +67,12 @@ class ViewController: UIViewController {
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first! as UITouch
-        if touch.view?.tag == self.mainBtn.tag{
-            
-        }
+        pushPlace.alpha = 0
+//        if touch.view?.tag == self.mainBtn.tag{
+//            UIView.animateWithDuration(0.5,animations: {
+//                self.mainBtn.frame = CGRectMake(self.mainBtn.center.x,self.mainBtn.center.y, 0, 0)
+//            })
+//        }
     }
     
 }
